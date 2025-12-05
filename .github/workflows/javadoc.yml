@@ -27,7 +27,7 @@ jobs:
     - name: Generate Javadocs
       run: |
         mkdir -p javadoc
-        javadoc -d javadoc *.java"
+        javadoc -d javadoc *.java
         
     - name: Deploy Javadocs to javadoc branch
       run: |
