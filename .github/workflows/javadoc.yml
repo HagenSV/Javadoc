@@ -27,8 +27,8 @@ jobs:
     - name: Generate Javadocs
       run: |
         mkdir -p javadoc
-        javadoc -d javadoc $(find src -name "*.java")
-
+        javadoc -d javadoc *.java"
+        
     - name: Deploy Javadocs to javadoc branch
       run: |
         git config user.name "github-actions"
